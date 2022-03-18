@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" 
+    integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/query.css">
+
+    <title>project-filimo</title>
+</head>
+<body>
+
+
+    <header>
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-b-me">
+            <div class="container-fluid mt-3">
+              <a class="navbar-brand" href="#">
+                  <img src="image/fa-filimo-dark-logo.png " class="logo mb-3"> 
+              </a>
+              <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown" id="li-nav">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          فیلم
+                        </a>
+                        <ul class="dropdown-menu width-dropdown ms-4" aria-labelledby="navbarDropdown" id="li-menu">
+                            <div class="row">
+                                <div class="col-4 me-5">
+                                    <li><a class="dropdown-item t-w" href="#">اکشن</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">عاشقانه</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">انیمیشن</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">مستند</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">علمی تخیلی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">تاک شو</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">کنسرت</a></li>
+                                </div>
+                                <div class="col-4">
+                                    <li><a class="dropdown-item t-w" href="#">تاریخی/مذهبی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">خانوادگی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">کمدی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">فیلم تیاتر</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">وحشت</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">فیلم کوتاه</a></li>
+                                </div>
+                            </div>              
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item dropdown ms-4" id="li2-nav">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          سریال
+                        </a>
+                        <ul class="dropdown-menu width-dropdown" aria-labelledby="navbarDropdown" id="li2-menu">
+                            <div class="row">
+                                <div class="col-4 me-5">
+                                    <li><a class="dropdown-item t-w" href="#">اکشن</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">عاشقانه</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">انیمیشن</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">مستند</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">علمی تخیلی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">تاک شو</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">کنسرت</a></li>
+                                </div>
+                                <div class="col-4">
+                                    <li><a class="dropdown-item t-w" href="#">تاریخی/مذهبی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">خانوادگی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">کمدی</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">فیلم تیاتر</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">وحشت</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">فیلم کوتاه</a></li>
+                                </div>
+                            </div>              
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item ms-4">
+                    <a class="nav-link active text-white" aria-current="page" href="#">ایرانی</a>
+                    </li>
+    
+                    <li class="nav-item dropdown ms-4"  id="li3-nav">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          مجموعه ها
+                        </a>
+                        <ul class="dropdown-menu width-dropdown" aria-labelledby="navbarDropdown" id="li3-menu">
+                            <div class="row">
+                                <div class="col-4 me-5">
+                                    <li><a class="dropdown-item t-w" href="#">مخصوص ناشنوایان</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">مخصوص نابینایان</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">جشنواره فجر</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">خلاصه فوتبال</a></li>
+                                    <li><a class="dropdown-item t-w" href="#"> همه لیست ها</a></li>
+                                </div>
+                                <div class="col-4">
+                                    <li><a class="dropdown-item t-w" href="#">اسکار 2021</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">250 فیلم برتر IMDB</a></li>
+                                    <li><a class="dropdown-item t-w" href="#">پرفروش ترین های سینمای ایران</a></li>
+                                    <li><a class="dropdown-item t-w" href="#"> پیشکش</a></li>
+                                </div>
+                            </div>              
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-4">
+                      <a class="nav-link text-white mb-3" href="#">
+                        فیلمومدرسه
+                      </a>
+                    </li>
+
+                    <li class="nav-item ms-4">
+                      <a class="nav-link text-white" href="#">
+                        کودک 
+                      </a>
+                    </li>
+
+                    <li class="nav-item d-flex ms-4 me-auto">
+                      <i class="bi bi-search mt-2 text-white "></i><a class="nav-link text-white" href="#">کودک </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle bor" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        H
+                      </a>
+                      <ul class="dropdown-menu bor-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <div class="nav-item d-flex flex-column align-items-center" >
+                               <img src="image/cards.svg" class="img-dropdown">
+                               <p class="text-white">164روزازاشتراک شما باقی مانده است</p>
+                               <button class="btn btn-secondary"> تمدید > </button>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider text-white"></li>
+                        <li>
+                            <div class="nav-item d-flex flex-row flex-wrap align-items-center">
+                              <div class="bor-dropdown me-5 ms-4">H</div>
+                              <div class="ms-3 me-auto">
+                                <p class="text-white">haniyeh.faghihi</p>
+                                <p class="text-white">شماره کاربری</p>
+                                <p class="text-white">09139231750</p>
+                              </div>
+                              <p class="ms-3 text-white">تنظیمات > </p>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider text-white"></li>
+                        <li>
+                          <div class="nav-item d-flex">
+                              <p class="text-white me-auto ms-4">انتخاب زمینه</p>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                              </div>
+                          </div>
+                        </li>
+                        <li><hr class="dropdown-divider text-white"></li>
+                        <li class="nav-item ms-4">
+                          <div class="row">
+                            <div class="col-7">
+                              <a class="d-flex a-footre" href="#">
+                                <i class="bi bi-eye text-white me-2"></i><p class="text-white me-5">فیلم و سریال های من</p>
+                              </a>
+                              <a class="d-flex a-footre" href="#">
+                                <i class="bi bi-film text-white me-2"></i><p class="text-white me-5" me-5>خریذ اشتراک</p>
+                              </a>
+                              <a class="d-flex a-footre" href="#">
+                                <i class="bi bi-tv-fill text-white me-2"></i><p class="text-white me-5">فعالسازی تلویزیون هوشمند</p>
+                              </a> 
+                            </div>
+                            <div class="col-5">
+                              <a class="d-flex a-footre" href="#">
+                                <i class="bi bi-lock text-white me-2"></i><p class="text-white">قفل کودک</p>
+                              </a>
+                              <a class="d-flex a-footre" href="#">
+                                <i class="bi bi-cart-fill text-white me-2"></i><p class="text-white">سوابق پرداخت</p>
+                              </a>
+                              <a class="d-flex a-footre" href="#">
+                                <i class="bi bi-box-arrow-right text-white me-2"></i><p class="text-white">خروج</p>
+                              </a>  
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </div> 
+      
+
+      <div class="row">       
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner style-carousel">
+      
+      
+            <div class="carousel-item active div-video">
+              <img src="image/w78i4_desktop_1_v1.jpg" class="d-block w-100 img-fluid ov div-video" alt="نیسان آبی">
+              <div class="box-n">
+                <img src="image/w78i4_logotype_v1.png">
+                <div class="div-1 d-flex align-items-center mt-4">
+                  <img src="image/exclusive-fa.svg" class="img-ekh me-3">
+                  <h6 class="text-black border-h6"><i class="bi bi-calendar2-minus"></i><span>چهارشنبه ها ساعت 8 صبح</span></h6>
+                </div>
+                <h5 class="text-white mt-3 mb-3">قسمت هفدهم کمدی نیسان آبی</h5>
+                <button class="btn btn-light"><i class="bi bi-play-fill"></i>اطلاعات بیشتر</button>
+              </div>
+            </div>
+      
+      
+      
+            <div class="carousel-item">
+              <div class="div-video">
+                <video class="video-h" poster="image/xhcn1_desktop_1_v13.jpg" autoplay controls loop muted>
+                  <source src="video/33485a5c2b00e8dc6df4ab0294d0960b41243720-480p.mp4" type="video/mp4">
+                </video>
+              </div>              
+              <div class="box-j">
+                <img src="image/xhcn1_logotype_v13.png">
+                <div class="div-1 d-flex align-items-center mt-4">
+                  <img src="image/exclusive-fa.svg" class="img-ekh me-3">
+                  <h6 class="text-black border-h6"><i class="bi bi-calendar2-minus"></i><span> ساعت 8 صبح</span></h6>
+                </div>
+                <h5 class="text-white mt-3 mb-3">ایهالناس!دیروز در حوالی تجریش پادشاه شما عاشق شد</h5>
+                <button class="btn btn-light"><i class="bi bi-play-fill"></i>اطلاعات بیشتر</button>
+              </div>
+            </div>
+      
+      
+      
+            <div class="carousel-item div-video">
+              <img src="image/hf0kw_desktop_1_v1.jpg" class="d-block w-100 img-fluid ov div-video" alt="جوکر">
+              <div class="box-jo">
+                <img src="image/hf0kw_logotype_v1.png" class="jo-size">
+                <div class="div-1 d-flex align-items-center mt-4">
+                  <img src="image/exclusive-fa.svg" class="img-ekh me-3">
+                  <h6 class="text-black border-h6"><i class="bi bi-calendar2-minus"></i><span>دوشنبه ها</span></h6>
+                </div>
+                <h5 class="text-white mt-3 mb-3">ریالیتی شو جوکر</h5>
+                <button class="btn btn-light"><i class="bi bi-play-fill"></i>اطلاعات بیشتر</button>
+              </div>
+            </div>
+
+
+
+            <div class="carousel-item div-video">
+              <img src="image/107596_desktop_1_v1.jpg" class="d-block w-100 img-fluid ov div-video" alt="سربازی کهنه کار">
+              <div class="box-s">
+                <img src="image/107596_logotype_v1.png" class="mb-4">
+                <h5 class="text-white mt-3 mb-3"> سربازی کهنه کار </h5>
+                <button class="btn btn-light"><i class="bi bi-play-fill"></i>اطلاعات بیشتر</button>
+              </div>
+            </div>
+
+
+
+            <div class="carousel-item div-video">
+              <img src="image/k860q_desktop_1_v1.jpg" class="d-block w-100 img-fluid ov div-video" alt="عصر یخبندان">
+              <div class="box-n">
+                <img src="image/k860q_logotype_v1.png" class="mb-4">
+                <h5 class="text-white mt-3 mb-3"> عصر یخبندان: ماجراهای باک وایلد با دوبله اختصاصی </h5>
+                <button class="btn btn-light"><i class="bi bi-play-fill"></i>اطلاعات بیشتر</button>
+              </div>
+            </div>
+
+
+
+            <div class="carousel-item div-video">
+              <img src="image/dars_desktop_1_v29.jpg" class="d-block w-100 img-fluid ov div-video" alt=" قهرمان سفر در زمان">
+              <div class="box-n">
+                <button class="btn btn-yellow">درس بخون امتیاز بگیر و جایزه ببر! <i class="bi bi-arrow-left ms-2"></i></button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev border-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next border-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>  
+      
+      <div class="row row-form-width">
+        <div class="container-fluid mt-3 display-f">
+
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle form-width" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              فیلم و سریال
+            </a>
+          
+            <ul class="dropdown-menu menu-select" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">همه</a></li>
+              <li><a class="dropdown-item" href="#">فیلم</a></li>
+              <li><a class="dropdown-item" href="#">سریال</a></li>
+            </ul>
+          </div>
+
+
+          <div class="dropdown ms-0 ms-lg-4">
+            <a class="btn btn-secondary dropdown-toggle form-width" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              ژانر
+            </a>
+          
+            <ul class="dropdown-menu menu-select" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">همه</a></li>
+              <li><a class="dropdown-item" href="#">تاریخی/مذهبی</a></li>
+              <li><a class="dropdown-item" href="#">خانوادگی</a></li>
+              <li><a class="dropdown-item" href="#">کمدی</a></li>
+              <li><a class="dropdown-item" href="#">فیلم تیاتر</a></li>
+              <li><a class="dropdown-item" href="#">وحشت</a></li>
+              <li><a class="dropdown-item" href="#">فیلم کوتاه</a></li>
+              <li><a class="dropdown-item" href="#">کنسرت</a></li>
+              <li><a class="dropdown-item" href="#">اکشن</a></li>
+              <li><a class="dropdown-item" href="#">عاشقانه</a></li>
+              <li><a class="dropdown-item" href="#">مستند</a></li>
+              <li><a class="dropdown-item" href="#">انیمیشن</a></li>
+              <li><a class="dropdown-item" href="#">علمی تخیلی</a></li>
+              <li><a class="dropdown-item" href="#">تاک شو</a></li>
+              <li><a class="dropdown-item" href="#">دوبله ترکی</a></li>
+            </ul>
+          </div>
+
+
+          <div class="dropdown ms-0 ms-lg-4">
+            <a class="btn btn-secondary dropdown-toggle form-width" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              کشور
+            </a>
+          
+            <ul class="dropdown-menu menu-select" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">همه</a></li>
+              <li><a class="dropdown-item" href="#">انگلیس</a></li>
+              <li><a class="dropdown-item" href="#">هند</a></li>
+              <li><a class="dropdown-item" href="#">چین</a></li>
+              <li><a class="dropdown-item" href="#">ایران</a></li>
+              <li><a class="dropdown-item" href="#">کره جنوبی</a></li>
+              <li><a class="dropdown-item" href="#">کانادا</a></li>
+              <li><a class="dropdown-item" href="#">ایتالیا</a></li>
+              <li><a class="dropdown-item" href="#">آمریکا</a></li>
+              <li><a class="dropdown-item" href="#">ترکیه</a></li>
+              <li><a class="dropdown-item" href="#">آلمان</a></li>
+              <li><a class="dropdown-item" href="#">خارجی</a></li>
+              <li><a class="dropdown-item" href="#">ژاپن</a></li>
+              <li><a class="dropdown-item" href="#">فرانسه</a></li>
+              <li><a class="dropdown-item" href="#">اسپانیا</a></li>
+              <li><a class="dropdown-item" href="#">دیگر کشور ها</a></li>
+            </ul>
+          </div>
+
+         
+
+          <div class="dropdown ms-0 ms-lg-4">
+            <a class="btn btn-secondary dropdown-toggle form-width" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              زبان
+            </a>
+          
+            <ul class="dropdown-menu menu-select" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">همه</a></li>
+              <li><a class="dropdown-item" href="#">فارسی(دوبله)</a></li>
+              <li><a class="dropdown-item" href="#">زبان اصلی(زیرنویس)</a></li>
+            </ul>
+          </div>
+
+
+          <div class="dropdown ms-0 ms-lg-4">
+            <a class="btn btn-secondary dropdown-toggle form-width" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              سن
+            </a>
+          
+            <ul class="dropdown-menu menu-select" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">همه</a></li>
+              <li><a class="dropdown-item" href="#">زیر3سال</a></li>
+              <li><a class="dropdown-item" href="#">تا 6 سال</a></li>
+              <li><a class="dropdown-item" href="#">تا 12 سال</a></li>
+              <li><a class="dropdown-item" href="#">تا 15 سال</a></li>
+              <li><a class="dropdown-item" href="#">تا 18 سال</a></li>
+
+            </ul>
+          </div>
+
+
+          <div class="ms-0 ms-lg-4">
+            <div class="form-width-hd d-flex align-items-center">
+              <P class="me-auto mt-3">HD</P>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="ms-0 ms-lg-4">
+            <button class="btn btn-yellow2">اعمال فیلتر</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+    <main class="main">
+
+      <section>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="d-flex">
+              <h1 class="h1-color mt-4 ms-4 me-auto">ویژه</h1>
+              <a href="#" class="h4-color"><h4 class="h4-color mt-4 me-4">مشاهده همه ></h4></a>
+            </div>          
+          </div>
+
+
+          <div class="row mt-3 me-2 ms-2 d-flex">          
+            <div class="col-md-3 mar-ri">
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>92%</p>
+                    <P class="mt-2">نیسان آبی-فصل1 قسمت 17</P>
+                    <p class="mt-1">کمدی-خانوادگی-1400</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_107732_25100-m.jpg" class="img-fluid">
+              </div>
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>96%</p>
+                    <P class="mt-2">گفت و گوی کاده اختصاصی اپارات با مهران مدیری</P>
+                    <p class="mt-1">تاک شو-1400</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_108436_25288-m.jpg" class="img-fluid mt-2">
+              </div>
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>91%</p>
+                    <P class="mt-2">!تام و جری:سرسخت باشید</P>
+                    <p class="mt-1">انیمیشن-ماجراجویی-2022</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_106849_23230-m.jpg" class="img-fluid mt-2">
+              </div> 
+            </div>
+          
+          
+            <div class="col-md-3 mar-ri">
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>92%</p>
+                    <P class="mt-2">جیران-فصل1 قسمت1</P>
+                    <p class="mt-1">عاشقانه-خانوادگی-1400</p>
+                  </div>                
+                </div>
+                <img src="image//vizhe/mov_85469_25283-m.jpg" class="img-fluid">
+              </div> 
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>88%</p>
+                    <P class="mt-2">حماسه دره شیلر</P>
+                    <p class="mt-1">اکشن-جنگی-1365</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_17637_25315-m.jpg" class="img-fluid mt-2">
+              </div> 
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>77%</p>
+                    <P class="mt-2">عصر یخبندان:ماجراهای باک وایلد</P>
+                    <p class="mt-1">انیمیشن-ماجراجویی-2022</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_100094_22417-m.jpg" class="img-fluid mt-2">
+              </div>   
+            </div>
+            
+          
+            <div class="col-md-3 mar-ri">
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>92%</p>
+                    <P class="mt-2">جوکر-فصل3 قسمت3</P>
+                    <p class="mt-1">کمدی-خانوادگی-1400</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_107574_24645-m.jpg" class="img-fluid">
+              </div>   
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>84%</p>
+                    <P class="mt-2">مولن روژ:جشنواره فجر 1400:محمدحسین محدویان</P>
+                    <p class="mt-1">تام شو-1400</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_108420_25285-m.jpg" class="img-fluid mt-2">
+              </div>   
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">ریچر-فصل1 قسمت1</P>
+                    <p class="mt-1">-2022اکشن-پلیسی معمایی</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_107607_24314-m.jpg" class="img-fluid mt-2">
+              </div>    
+            </div>
+          
+
+            <div class="col-md-3 mar-ri">
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>74%</p>
+                    <P class="mt-2">گزارش یک قتل</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-1365</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_12788_25317-m.jpg" class="img-fluid">
+              </div>
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>93%</p>
+                    <P class="mt-2">پاشا-1400</P>
+                    <p class="mt-1">کمدی-فیلم تیاتر-1400</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_108008_24827-m.jpg" class="img-fluid mt-2">
+              </div>
+  
+              <div class="vizhe">
+                <div class="overlay-vizhe text-white">
+                  <div class="div-vizhe">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>                
+                </div>
+                <img src="image/vizhe/mov_107632_24312-m.jpg" class="img-fluid mt-2">
+              </div> 
+            </div>                              
+          </div>
+        </div> 
+      </section>
+      
+      
+
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <a href="#" class="h4-color"><h1 class="h4-color mt-4 ms-4">نمایش همه ی فیلم های ویژه امروز<i class="bi bi-arrow-down-short"></i></h1></a>
+          </div>
+
+
+          <div class="row">
+            <div class="container-fluid d-flex">
+              <h1 class="h1-color mt-4 mb-3 ms-4 me-auto">تازه های فیلمو</h1>
+              <a href="#" class="h4-color"><h4 class="h4-color mt-4 me-4">مشاهده همه ></h4></a>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="tazehaa text-white d-flex flex-wrap justify-content-center">
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108379_25237-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_17636_129-m.jpg" class="img-fluid taze ">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_106495_22637-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108253_25090-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_12982_760-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108301_25143-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_107625_24252-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108109_24908-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108109_24908-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108109_24908-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108109_24908-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/tazeha/mov_108109_24908-m.jpg" class="img-fluid taze">
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+      
+
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="d-flex">
+              <h1 class="h1-color mt-4 mb-3 ms-4 me-auto">چهلمین جشنواره فیلم فجر</h1>
+              <a href="#" class="h4-color"><h4 class="h4-color mt-4 me-4">مشاهده همه ></h4></a>
+            </div>            
+          </div>
+
+
+
+          <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="div-carousel w-100 text-white d-flex flex-wrap justify-content-center">
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108469_25340-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108441_25341-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108440_25339-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108418_25266-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108439_25295-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108438_25294-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108437_25289-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+                  </div>
+                </div>
+  
+  
+                <div class="carousel-item">
+                  <div class="div-carousel d-block w-100">
+                    <div class="tazehaa text-white d-flex flex-wrap justify-content-center">
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108274_25286-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108273_25142-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108272_25138-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108271_25137-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108270_25136-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108269_25135-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108268_25132-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev b-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next b-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>  
+        </div>
+      </section>
+        
+
+      
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="d-flex">
+              <h1 class="h1-color mt-4 mb-3 ms-4 me-auto">داغ ترین ها</h1>
+              <a href="#" class="h4-color"><h4 class="h4-color mt-4 me-4">مشاهده همه ></h4></a>
+            </div>            
+          </div>
+
+
+          <div class="row">
+            <div class="tazehaa text-white d-flex flex-wrap justify-content-center">
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_2071_1-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh//mov_95117_15067-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_srl_94069_363-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_12739_14554-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_7230_467-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_25421_1-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_82390_390-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_10322_1-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_10322_1-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_10322_1-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_10322_1-m.jpg" class="img-fluid taze">
+              </div>
+  
+              <div class="tazeha mt-2 ms-3">
+                <div class="overlay-tazeha">
+                  <div class="div-tazeha">
+                    <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                    <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                    <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                  </div>
+                </div>
+                <img src="image/dagh/mov_10322_1-m.jpg" class="img-fluid taze">
+              </div>            
+            </div>  
+          </div>
+        </div>
+      </section>
+     
+
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="d-flex">
+              <h1 class="h1-color mt-4 mb-3 ms-4 me-auto">به تماشا ادامه دهید</h1>
+              <a href="#" class="h4-color"><h4 class="h4-color mt-4 me-4">مشاهده همه ></h4></a>
+            </div>            
+          </div>
+
+
+
+          <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="div-carousel d-block w-100">
+                    <div class="tazehaa text-white d-flex flex-wrap justify-content-center">
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108469_25340-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108441_25341-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108440_25339-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108418_25266-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108439_25295-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108438_25294-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108437_25289-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108436_25287-m.jpg" class="img-fluid taze">
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+  
+                <div class="carousel-item">
+                  <div class="div-carousel d-block w-100">
+                    <div class="tazehaa text-white d-flex flex-wrap justify-content-center">
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108274_25286-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108273_25142-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108272_25138-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108271_25137-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108270_25136-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108269_25135-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108268_25132-m.jpg" class="img-fluid taze">
+                      </div>
+          
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+  
+                      <div class="tazeha mt-2 ms-3">
+                        <div class="overlay-tazeha">
+                          <div class="div-tazeha">
+                            <p class="like-p"><i class="bi bi-hand-thumbs-up-fill me-2"></i>97%</p>
+                            <P class="mt-2">سو ظن-فصل1 قسمت1</P>
+                            <p class="mt-1">اکشن-هیجان انگیز-2022</p>
+                          </div>
+                        </div>
+                        <img src="image/jashnvare/mov_108267_25130-m.jpg" class="img-fluid taze">
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev b-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next b-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>  
+            
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex">
+            <a href="#" class="a-footre me-3 pt-2"><i class="bi bi-tv-fill text-white me-2"></i>تماشا با تلویزیون</a>
+            <a href="#" class="a-footre me-3 pt-2">اپلیکیشن ها</a>
+            <a href="#" class="a-footre me-3 pt-2">تماس با ما</a>
+            <a href="#" class="a-footre me-3 pt-2">قوانین</a>
+            <a href="#" class="a-footre me-3 pt-2">پرسش های متداول</a>
+            <a href="#" class="a-footre me-3 pt-2">به ما بپیوندید</a>
+            <div class="btn-group dropup me-auto">
+              <button type="button" class="btn btn-black a-footre">
+                سایر لینک ها
+              </button>
+              <button type="button" class="btn btn-black dropdown-toggle dropdown-toggle-split bg-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu bg-black">
+                  <a href="#" class="dropdown-item a-footre t-w">لوگو</a>
+                  <a href="#" class="dropdown-item a-footre t-w">دانلود فیلم و سریال</a>
+              </ul>
+            </div>
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-black a-footre">
+                شبکه های اجتماعی
+              </button>
+              <button type="button" class="btn btn-black dropdown-toggle dropdown-toggle-split bg-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu bg-black">
+                <a href="#" class="dropdown-item a-footre t-w"><i class="bi bi-instagram me-2"></i>اینستاگرام</a>
+                <a href="#" class="dropdown-item a-footre t-w"><i class="bi bi-twitter me-2"></i>توییتر</a>
+                <a href="#" class="dropdown-item a-footre t-w"><i class="bi bi-telegram me-2"></i>تلگرام</a>
+                <a href="#" class="dropdown-item a-footre t-w"><i class="bi bi-skip-end-circle me-2"></i>آپارات</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
